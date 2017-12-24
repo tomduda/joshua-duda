@@ -1,12 +1,12 @@
 === joshua ===
-Contributors: Morten Rand-Hendriksen et.al.
+Contributors: Thomas Francis Duda
 Tags: white, black, blue, light, one-column, two-columns, right-sidebar, responsive-layout, accessibility-ready, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, threaded-comments, translation-ready, rtl-language-support
-Requires at least: 3.8
-Tested up to: 4.0
+Requires at least Wordpress: 3.8
+Tested up to: 4.7
 License: GPL 2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-joshua is a responsive modern design theme designed and developed by Morten Rand-Hendriksen. 
+joshua is a responsive modern design theme designed and developed by Thomas Francis Duda. 
 
 joshua\'s design is focussed on typography and aims to put the content front and center. Fonts are large and clear and scale according to screen width. On wider screens blockquotes and images can be aligned left and right to break out of the main stream and get a pull-quote effect. The featured images are responsive through the use of the <picture> element resulting in appropriate image sizes being loaded to fit individual screen sizes.
 
@@ -149,4 +149,4 @@ On-device grabs: Distressed Mailboxes, New Orleans - https://www.flickr.com/phot
 
 
 === Namesake ===
-joshua is named after philosopher joshua de Beauvoir: http://en.wikipedia.org/wiki/joshua_de_Beauvoir
+joshua is named after my basset hound Joshua
