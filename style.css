@@ -2352,20 +2352,19 @@ nav.navigation.post-navigation{display:none}
 
 @media screen and (max-width: 600px) {
     .author-meta,
-    .author-description { margin-left: 0; }
-}
+    .author-description { margin-left: 0; 
 
-/* Comments responsive (Comments media queries*/
-@media screen and (max-width:600px) {    
-    .comment-list ol { margin-left: 0; }
+    }
+    .comment-list ol { margin-left: 0; 
+    }
     
-    .comment-content ol { margin-left: 1.5em; }
+    .comment-content ol { 
+        margin-left: 1.5em; 
+    }
     
     .comment-content,
-    .reply { margin-left: 0; }
-}
-
-@media screen and (max-width: 600px) {
+    .reply { margin-left: 0; 
+    }
     #menu-social ul {
     position: absolute;
         top: 0;
@@ -2377,48 +2376,27 @@ nav.navigation.post-navigation{display:none}
         padding-left:.5em;
         padding-right: .5em;
     }
-}
-
-
-@media screen and (max-width: 600px){
-    /*    #par-box{display: none}    #prlx_lyr_1{display:none}*/    
-    #meet h2{display:none}   
+    #meet h2{
+        display:none
+    }   
     #meet p{
         margin-top: 1em;
         }    
-    }
-@media screen and(max-width: 600px){    
-    #prlx_lyr_1{
-        display: none !important;
-    }
-}    
-
-
-@media screen and (max-width: 600px) {
     .search-toggle {
         position: absolute;
         top: 0;
         right: 0;
         margin-right: 0;
     }
-}
-
-@media screen and (max-width:600px) {
     blockquote.alignleft,
     blockquote.alignright {
         width: 100%;
         padding: 1em 1.5em 0;   
     }
-}
-
-@media screen and (max-width: 600px){
-    
-   nav#site-navigation {display: flex;}
-}
-
-
-@media screen and (max-width: 600px) {
-    .comment-navigation .nav-previous,
+     nav#site-navigation {
+    display: flex;
+    }
+     .comment-navigation .nav-previous,
     .post-navigation .nav-previous,
     .comment-navigation .nav-next,
     .post-navigation .nav-next {
@@ -2429,8 +2407,11 @@ nav.navigation.post-navigation{display:none}
     }
     
     .comment-navigation .nav-next,
-    .post-navigation .nav-next { margin-top: 4rem; display:none}
-}
+    .post-navigation .nav-next { 
+        margin-top: 4rem; display:none
+    }
+}    
+
 
 
 
@@ -2508,8 +2489,13 @@ nav.navigation.post-navigation{display:none}
 
 /* 779PX SCREENS */
 
-@media screen and (max-width: 779px){
-    .front-index-thumbnail { margin-bottom: 0; }
+@media screen and (max-width: 780px){
+    .front-index-thumbnail { margin-bottom: 0;
+    }
+     .about-tom-text-0 p, .about-tom-text-1 p, .about-tom-text-2 p {        
+         font-size: .8em;
+         padding-top: .2em;
+    }
 }
 
 
@@ -2525,13 +2511,6 @@ nav.navigation.post-navigation{display:none}
 
 /* 740PX SCREENS */
 
-@media screen and (max-width: 750px) {    
-    .about-tom-text-0 p, .about-tom-text-1 p, .about-tom-text-2 p {        
-         font-size: .8em;
-         padding-top: .2em;
-    }
-    
-}
 
 /* 750PX SCREENS */
 
@@ -2616,7 +2595,7 @@ nav.navigation.post-navigation{display:none}
 /* 1320PX SCREENS */
 
 /* Meta responsive */
-@media screen and (min-width: 1320px) {
+    @media screen and (min-width: 1320px) {
     .single .entry-meta {
         position: relative;
         width: 100%;
@@ -2625,8 +2604,10 @@ nav.navigation.post-navigation{display:none}
     }
 
     @media screen and (min-width: 1320px) {
-    .index-box blockquote.alignleft { padding-left: 2em; }
-}
+    .index-box blockquote.alignleft { 
+        padding-left: 2em;
+         }
+    }
 
 /* Alignment responsive */
 @media screen and (min-width: 1320px) {
@@ -2667,19 +2648,7 @@ nav.navigation.post-navigation{display:none}
         padding-left: 0;     }
  }
 
- 
 
-
-/* Footer widgets responsive */
-@media screen and (max-width: 879px) {
-    #footer-widgets { width: 100%!important; }
-    
-    .footer-widgets .widget {
-        float: none;
-        width: 100%;
-        margin: 0 0 8rem;
-    }
-}
 
 
 
@@ -2692,6 +2661,13 @@ nav.navigation.post-navigation{display:none}
         margin: 0 auto;
         padding: 4rem;
         border: none;
+    }
+     #footer-widgets { width: 100%!important; }
+    
+    .footer-widgets .widget {
+        float: none;
+        width: 100%;
+        margin: 0 0 8rem;
     }
 }
 
