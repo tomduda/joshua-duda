@@ -1714,7 +1714,7 @@ div.article-content{
     /* TESTIMONIALS section */ 
 
 #testimonials {    
-    padding: 4rem 0;     
+    padding: 4rem 0 1em 1em;     
     background: #1797a4;
 }
 
@@ -1808,7 +1808,7 @@ div.article-content{
 }
 .about-tom-text-0, .about-tom-text-1, .about-tom-text-2{
     opacity: 0;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .about-tom-text-0 h3, .about-tom-text-1 h3, .about-tom-text-2 h3{
@@ -2451,9 +2451,10 @@ nav.navigation.post-navigation{display:none}
 
 @media screen and (min-width: 600px) {    
     .testimonials li {        
-        width: 33.3333333333%;        
+        width: 33.3333333333%;   
+        min-width: 300px;     
         padding: 2rem 4rem;        
-        float: left;    
+        float: left;  
     }    
     .testimonial-thumb {        
         max-width: 210px;        
