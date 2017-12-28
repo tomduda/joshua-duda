@@ -52,7 +52,7 @@
                             // custom menu
                             wp_nav_menu(array('menu'=>'Front Page Menu'));
                         }else{
-                         wp_nav_menu(array('theme_location' => 'primary'));
+                         wp_nav_menu(array('menu' => 'primary'));
                         }
                         ?>
                         <div class="search-toggle">
@@ -69,6 +69,7 @@
 				<?php get_search_form(); ?>
 			</div>
 		</div>
+<h1>I am the blog header</h1>
 
 	</header><!-- #masthead -->
 

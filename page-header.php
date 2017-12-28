@@ -63,7 +63,7 @@
 				<?php get_search_form(); ?>
 			</div>
 		</div>
-<h2>Hello, I am header.php</h2>
+<h2>Hello, I am page-header.php</h2>
 	</header><!-- #masthead -->
 
 
