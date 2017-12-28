@@ -40,10 +40,10 @@ global $more;
             
             <?php // echo get_the_title() ?> 
             <?php
-            echo '<div ="asshole">';
+            echo "<div class='website-portfolio-box'>";
             echo '<h3>' . get_the_title() . '</h3>';
             the_content(); 
-            echo '</div>';
+            echo "</div>";
             endwhile;
 
             endif;

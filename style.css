@@ -1843,7 +1843,12 @@ div.article-content{
     
     background-color: #235379;
     justify-content: center;
-}            
+}          
+
+.website-portfolio-box{
+    border: 4em;
+    margin: 3em;
+}  
 
 .services-list {    
     display: flex;
@@ -2527,9 +2532,5 @@ nav.navigation.post-navigation{display:none}
     flex-wrap: wrap;
 
 }
-.asshole img{
-    border:  2px solid red;
-    padding: 15px;
-    margin: 10px;
-}
+
 
