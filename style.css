@@ -555,16 +555,7 @@ using the fontawesome.io website as a resource */
     color: #fff;
     content: '\f004 ';
 }
-#services .section-title:before {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 8px;
-    font-family: 'Fontawesome';
-    font-size: 26px;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    content: '\f085 ';
-}
+
 #call-to-action .section-title:before {
     display: inline-block;
     vertical-align: top;
@@ -1414,11 +1405,13 @@ a.author-link {
 .wp-caption {
     max-width: 100%;
     margin-bottom: 1.5em;
+
 }
 
 .wp-caption img[class*="wp-image-"] {
     display: block;
     margin: 0 auto;
+    padding: 1.5em;
 }
 
 .wp-caption-text { text-align: center; }
@@ -1827,7 +1820,6 @@ div.article-content{
     font-size: 24px;    
     font-size: 2.4rem;    
     color: white;
-    background: #ACF0F1;
     border-radius: 1em 0 0 0;
 
 }
@@ -1845,20 +1837,19 @@ div.article-content{
 
 /* SERVICES section or the website example portfolio*/ 
 #services {    
-    padding: 4rem 0;
     display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 4em 6rem 4em;
+    
+    background-color: #235379;
+    justify-content: center;
 }            
-#services h2{
-    color: black;
-}
 
-#services .section-title {    
-    padding-bottom: 1rem;    
-    margin-bottom: 2rem;    
-    border-bottom: 2px solid #8abf5e;
-}
 .services-list {    
-    margin: 4rem 0 0 -2rem;    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0 0 -2em;  
+    width: 95%;  
     padding: 0;    
     list-style: none;
 }
@@ -1945,37 +1936,14 @@ section#contact.entry-content{
     background: red !important;
  }
 
-#services{    
-    background: #235379;     
-    
-}
-#services .wp-caption-text{    
-    color: black;
-        display: none;
-}
-#services .wp-caption-text {    
-    color: white;    
-    background: transparent;
-}
-#services h3{    
-    color: white;
-        font-size: 110%;
-        text-align: end;
-        line-height:  1.7em;
-}
-#services .li.clear{    
-    background-color: #F8E6C2;
-}
-#services .section-title{    
-    color: white;    
-    background: #6B0E00;    
-    padding: .5em;
-}
+
+
+
 #meet .section-title{    
     color: white;
-    /*    background: #00497A;*/    
     padding: .5em;
 }
+
 #contact .section-title{    
     color: white;    
     padding: .5rem;
@@ -2542,5 +2510,26 @@ nav.navigation.post-navigation{display:none}
 
 @media screen and (min-width: 1820px) {
     .alignright { margin-right: -160px; }
+}
+
+
+.web-portfolio-item{
+     
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;    
+    justify-content: space-between;
+}
+
+#web_design_portfolio{
+    background: #235379;     
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.asshole img{
+    border:  2px solid red;
+    padding: 15px;
+    margin: 10px;
 }
 

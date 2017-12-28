@@ -12,97 +12,49 @@ global $more;
 
 <!-- *******************************Website portfolio section or Services******************************* -->
 
-<section id="services" >
-
- <div class="indent clear ">
 
 
-    <?php 
 
-    $query = new WP_Query( 'pagename=web-design-and-development' );
 
-    $services_id = $query->queried_object->ID;
+<section id="services">
 
-    // The Loop
+  
 
-    if ( $query->have_posts() ) :
+        <?php 
 
+        $args = array('posts_per_page' => 6,'orderby' => 'rand','category_name' => 'web_design_portfolio');
+
+        $query = new WP_Query( $args );
+
+            // The Loop
+        if ( $query->have_posts() ) :
+
+            
+        // counter furnished to provide each class a unique id
+    
         while ( $query->have_posts() ) :
 
             $query->the_post();
+
         ?>
-
-        <h2 class="section-title"> <?php get_the_title() ?> </h2>
-        <div class="entry-content" > <?php the_content('') ?></div>
-        
-        <?php
-
-        
-
-        endwhile;
-
-        endif;
-
-        /* Restore original Post Data */
-
-        wp_reset_postdata();
-
-        $args = array('posts_per_page' => 6,'orderby' => 'rand', 'post_type' => 'page','post_parent' => $services_id);
-
-        $services_query = new WP_Query( $args );
-
-        // The Loop
-
-        if ( $services_query->have_posts() ) :
-
-            ?>
-        <ul class="services-list">
+            
+            <?php // echo get_the_title() ?> 
             <?php
+            echo '<div ="asshole">';
+            echo '<h3>' . get_the_title() . '</h3>';
+            the_content(); 
+            echo '</div>';
+            endwhile;
 
-            while ( $services_query->have_posts() ) :
+            endif;
+            /* Restore original Post Data */
 
-                $services_query->the_post();
+            wp_reset_postdata();
+
             ?>
+    
+    </section><!-- #services -->
 
-            <li class="clear">
-                <?php
-                echo '<a href="' . get_permalink() . '" title="Learn more about ' . get_the_title() . '">';
-
-                echo '<h3 class="services-title">' .  get_the_title() . '</h3>';
-                ?>
-
-            </a>
-
-            <div class="services-lede">
-                <?php
-
-                the_content();
-                ?>
-
-
-            </div>
-
-        </li>
-
-        <?php
-
-        endwhile;
-
-        echo '</ul>';
-
-        endif;
-
-        /* Restore original Post Data */
-
-        wp_reset_postdata();
-
-
-
-        ?>
-
-    </div><!-- .indent -->
-
-</section> 
 
 <!--****************************************************************** Portfolio overview Begin ************************************************************************* */ -->
 
@@ -278,7 +230,7 @@ global $more;
 
                         ?>
 
-                    </div><!-- .indent -->
+                    
 
 
                 </section><!-- #contact -->
