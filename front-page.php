@@ -6,7 +6,6 @@
 /* This is the version for ThomasDuda.com */
 
 get_header();
-global $more;
 ?>
 
 

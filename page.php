@@ -10,11 +10,9 @@
  * @package joshua
  */
 
-if (is_category('scamming-the-scammers')) {
-get_header('scamming');
-} else {
-get_header('blog');
-} ?>
+
+get_header(); ?>
+
 	<div id="primary" class="content-area">
 		
 

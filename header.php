@@ -47,7 +47,21 @@
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
                     <h1 class="menu-toggle"><a href="#"><?php _e( 'Menu', 'joshua' ); ?></a></h1>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
+			<?php 
+                if(is_front_page()){
+                    $args = array(
+                            'theme_location' => 'primary'
+                        );
+                       wp_nav_menu($args);
+                }
+                else{
+                    $args = array(
+                            'theme_location' => 'secondary'
+                        );
+                       wp_nav_menu($args);
+                }
+                        
+                        ?>
 
                         <div class="search-toggle">
                             <i class="fa fa-search"></i>
