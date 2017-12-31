@@ -5,7 +5,7 @@
  * @package joshua
  */
 
-get_header('blog'); ?>
+get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

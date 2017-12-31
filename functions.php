@@ -65,10 +65,9 @@ function joshua_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'front-page-menu' => __( 'Front Page Menu', 'joshua' ),
-		'primary-menu' => __('Primary Menu'),
-		'main-menu' => __('Main Menu'),
-                'social' => __( 'Social Menu', 'joshua'),
+		'primary' => __( 'Primary Menu'),
+		'secondary' => __('Secondary Menu'),
+                'social' => __( 'Social Menu'),
 	) );
 
 	// Enable support for Post Formats.

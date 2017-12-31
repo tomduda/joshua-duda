@@ -6,7 +6,6 @@
 /* This is the version for ThomasDuda.com */
 
 get_header();
-global $more;
 ?>
 
 
@@ -40,10 +39,10 @@ global $more;
             
             <?php // echo get_the_title() ?> 
             <?php
-            echo '<div ="asshole">';
+            echo "<div class='website-portfolio-box'>";
             echo '<h3>' . get_the_title() . '</h3>';
             the_content(); 
-            echo '</div>';
+            echo "</div>";
             endwhile;
 
             endif;
@@ -238,57 +237,46 @@ global $more;
 
                 <!-- **************************************************************Contact information section************************************************************** -->
 
-                <div id="primary" class="content-area joshua-page" >
+                <div id="par-box3" ><h2 class="hide">Contact</h2></div>
 
-                    <main id="main" class="site-main" role="main">
+            <div id="prlx_lyr_4"></div>
 
+            <section id="contact">
 
-                        <div id="par-box4" ><h2 class="hide">Contact Information</h2></div>
+                <div class="indent clear">
 
-                        <div id="prlx_lyr_2"></div>
+                    <?php 
 
+                    $query = new WP_Query( 'pagename=contact' );
+
+        // The Loop
+
+                    if ( $query->have_posts() ) :
+
+                        while ( $query->have_posts() ) :
+
+                            $query->the_post();
+
+                        echo '<h2 class="section-title">' . get_the_title() . '</h2>';
+
+                        echo '<div class="entry-content">';
                         
+                        the_content();
+                        
+                        endwhile;
 
-                        <section id="call-to-action" ><div class="image">
+                        endif;
 
-                            <div class='indent'>
+                        /* Restore original Post Data */
+
+                        wp_reset_postdata();
+
+                        ?>
+
+                    
 
 
-                                <?php 
-
-                                $query = new WP_query('pagename=contact');
-
-    // The loop
-
-                                if($query ->have_posts()):
-
-                                    while($query->have_posts()):
-
-                                        $query->the_post();
-
-                                    echo '<div class="entry-content">';
-
-                                    the_content();
-
-                                    echo '</div>';
-
-                                    endwhile;
-
-                                    endif;
-
-                                    wp_reset_postdata();
-
-                                    ?>
-
-                                    <div class="front-right"></div>
-
-                                </div>
-                            </div>
-
-                        </section>
-                    </main><!-- #main -->
-
-                </div><!-- #primary -->
+                </section><!-- #contact -->
 
                 <!-- **************************************************************Footer section begins************************************************************** -->
 

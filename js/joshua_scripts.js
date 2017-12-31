@@ -37,33 +37,42 @@ $(function() {
 });
 
 
-jQuery(document).ready(function($){
+
+ jQuery(document).ready(function($){
 
 			var windowHeight = $(window).height();
 			var windowScrollPosTop = $(window).scrollTop();
 			var windowScrollPosBottom = windowHeight + windowScrollPosTop;
-	
 
-	$.fn.revealOnScroll = function(direction){
+	$.fn.revealOnScroll = function(direction, speed){
 		return this.each(function(){
 			var objectOffset = $(this).offset();			
 			var objectOffsetTop = objectOffset.top;		
 
+			if(!$(this).hasClass("hidden")){
+				$(this).css("opacity", 0).addClass("hidden");
+				if(direction == "right"){
+					$(this).css({"opacity" : 0,
+					"right": "7700px"
+					});
+				}
+				else{
+					$(this).css({"opacity" : 0,
+					"right": "-7700px"
+					});
+				}
+			}
 
 			if(!$(this).hasClass('animation-complete')){
 
-			if(windowScrollPosBottom > objectOffsetTop){
-				$(this).animate({"opacity" : 1,
-								"right" : 0}, 3000).addClass('animation-complete');
-				$(this).animate({"opacity" : 1}, 4000).addClass('animation-complete');
-				$(this).animate({"opacity" : 1}, 5000).addClass('animation-complete');
-
-
-				
-			}
+				if(windowScrollPosBottom > objectOffsetTop){
+					$(this).animate({"opacity" : 1, "right" : 0}, speed).addClass('animation-complete');
+					$(this).animate({"opacity" : 1}, speed).addClass('animation-complete');
+					$(this).animate({"opacity" : 1}, speed).addClass('animation-complete');
+				}
 			}
 
-		});
+		}); // end return this each function
 
 	} // End reveal on scroll function
 
@@ -72,21 +81,17 @@ jQuery(document).ready(function($){
 			windowHeight = $(window).height();
 			windowScrollPosTop = $(window).scrollTop();
 			windowScrollPosBottom = windowHeight + windowScrollPosTop;
-	
-			
-		$('.about-tom-text-0').revealOnScroll("right");
-		$('.about-tom-text-1').revealOnScroll("left");
-		$('.about-tom-text-2').revealOnScroll("right");
-		$(".testimonial-box-0").revealOnScroll("left");
-		$(".testimonial-box-1").revealOnScroll("right");
-		$(".testimonial-box-2").revealOnScroll("left");
-		$(".resume-border").revealOnScroll("left");
+
+		$('.about-tom-text-0').revealOnScroll("right", 1000);
+		$('.about-tom-text-1').revealOnScroll("left", 2000 );
+		$('.about-tom-text-2').revealOnScroll("right", 3000);
+		$(".testimonial-box-0").revealOnScroll("left", 1000);
+		$(".testimonial-box-1").revealOnScroll("right", 2000);
+		$(".testimonial-box-2").revealOnScroll("left",3000);
+		$(".resume-border").revealOnScroll("left", 2000);
 
 
 	});
 	
 	
 });
-
-
-

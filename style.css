@@ -556,19 +556,7 @@ using the fontawesome.io website as a resource */
     content: '\f004 ';
 }
 
-#call-to-action .section-title:before {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 8px;
-    font-family: 'Fontawesome';
-    font-size: 26px;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    content: '\f044';
-}
-#call-to-action a{
-    color: white;
-}
+
  
 
 /*********************Paging Navigation**********************/
@@ -1478,9 +1466,7 @@ object { max-width: 100%; }
 
 .single-post-thumbnail { 
     background: #235379 !important;
-    display: flex;
-    justify-content: center;
-
+    
 }
 
 .front-index-thumbnail { margin-bottom: -3.2em; }
@@ -1551,22 +1537,6 @@ h1.page-title{color: black;}
 }
 #meet h2{color: black;}
 
-#call-to-action input.btn.btn-default{ background: #86);}
-#call-to-action input.btn.btn-default:hover{
-    color: white;
-    background: rgba(255, 255, 255, .5);
-}
-#call-to-action p{
-    line-height: 1.7em;
-    margin-top: 2.5em;
-    font-size: 2.1rem;}
-#call-to-action h2, #call-to-action a, #call-to-action label{color: #235379}
-#call-to-action textarea.form-control{height: 100px !important;}
-#call-to-action textarea.form-control placeholder{display: none;}
-
-call-to-action a{
-    text-decoration: none;
-}
 
 .entry-title {
     margin-top: .7em;
@@ -1688,22 +1658,7 @@ div.article-content{
     background: #acf0f2;
     padding: 6rem 0;
 }
-#call-to-action .image{
-    
-}
 
-#call-to-action p{
-    color: black;
-}
-
-#call-to-action .section-title {    
-    color: #fff;    
-    font-size: 44px;
-}
-
-#call-to-action .entry-content {    
-    font-size: 130%;
-}
     /* TESTIMONIALS section */ 
 
 #testimonials {    
@@ -1792,8 +1747,8 @@ div.article-content{
 .about-tom-text-0, .about-tom-text-1,.about-tom-text-2{
     
     flex: 1;
-    opacity: 1;
-    background: #A7EAEB; 
+    
+    
     color: black;
     margin: 1em;
     border-radius: 2em 0 2em 0;
@@ -1803,11 +1758,22 @@ div.article-content{
     opacity: 0;
     min-width: 250px;
 }
+.about-tom-text-0{
+    background-color: rgba(35,83,121,.1);
+}
+
+.about-tom-text-1{
+    background-color: rgba(35,83,121,.2);
+}
+
+.about-tom-text-2{
+    background-color: rgba(35,83,121,.3);
+}
 
 .about-tom-text-0 h3, .about-tom-text-1 h3, .about-tom-text-2 h3{
     left: -100px;
     right: -100px;
-    
+    padding: 1em;
     margin-left: 0;
 }
 .about-tom-text-0 p, .about-tom-text-1 p, .about-tom-text-2 p{
@@ -1843,7 +1809,22 @@ div.article-content{
     
     background-color: #235379;
     justify-content: center;
-}            
+}          
+
+.website-portfolio-box{
+    position: relative;
+    border: 4em;
+    margin: 3em;
+}  
+
+.website-portfolio-box h3{
+    position: absolute;
+    top: -2.5em;
+    left: -4.5em;
+    background: rgba(0,0,0, 0.1);
+    padding: 2px;
+  
+}
 
 .services-list {    
     display: flex;
@@ -2079,10 +2060,8 @@ services-list li:hover {
     
 nav.navigation.post-navigation{display:none}
 .timeline-Header-title{color:white}
-#call-to-action p{
-    font-size: .5em;
-    line-height: 1.7em;
-}
+
+
 
 .darkness{
     z-index: 
@@ -2358,7 +2337,7 @@ nav.navigation.post-navigation{display:none}
     .front-index-thumbnail { margin-bottom: 0;
     }
      .about-tom-text-0 p, .about-tom-text-1 p, .about-tom-text-2 p {        
-         font-size: .8em;
+        
          padding-top: .2em;
     }
 }
@@ -2476,11 +2455,11 @@ nav.navigation.post-navigation{display:none}
  
  /* >= 1539PX SCREENS */
 
-@media screen and (max-width: 1539px) and (min-width: 1160px){ 
+/* @media screen and (max-width: 1539px) and (min-width: 1160px){ 
     .content-area.joshua-page {
         margin-left: 0;
         padding-left: 0;     }
- }
+ } */
 
 /* Header responsive */
 
@@ -2527,9 +2506,19 @@ nav.navigation.post-navigation{display:none}
     flex-wrap: wrap;
 
 }
-.asshole img{
-    border:  2px solid red;
-    padding: 15px;
-    margin: 10px;
+.hide-window{
+
 }
+
+.single-post-thumbnail{
+    position: relative;
+}
+.single-post-thumbnail h4{
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+
+
 
