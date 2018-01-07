@@ -2069,6 +2069,14 @@ nav.navigation.post-navigation{display:none}
     width: 100%;
     background: black;
 }
+
+#resume {    
+    text-decoration: none;    
+    padding: 4rem 0;    
+    color: white; 
+    background: #235379;
+}
+
 .resume-border{
     background: #292929;
     padding: 2em;
@@ -2164,6 +2172,7 @@ nav.navigation.post-navigation{display:none}
         left: 0;
         display: block;
         float: none;
+        border: none;
         
     }
 

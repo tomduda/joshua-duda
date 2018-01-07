@@ -90,8 +90,24 @@ $(function() {
 		$(".testimonial-box-2").revealOnScroll("left",3000);
 		$(".resume-border").revealOnScroll("left", 2000);
 
+		$(".site-content .widget-area").revealOnScroll("left", 5000);
+
 
 	});
 	
 	
 });
+ 
+
+ jQuery(document).ready(function($){
+ 	$(".main-navigation li a ").click(function(){
+ 		if($(window).width() <= 600){
+ 			$(".main-navigation li a").hide();
+ 		}
+
+ 		
+ 	});
+ }
+ 	
+
+ 	);

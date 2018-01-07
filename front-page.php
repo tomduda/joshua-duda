@@ -196,7 +196,7 @@ get_header();
 
             <div id="prlx_lyr_4"></div>
 
-            <section id="contact">
+            <section id="resume">
 
                 <div class="indent clear">
 
@@ -243,7 +243,7 @@ get_header();
 
             <section id="contact">
 
-                <div class="indent clear">
+               
 
                     <?php 
 
