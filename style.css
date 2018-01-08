@@ -1479,6 +1479,15 @@ object { max-width: 100%; }
 .single-post-thumbnail img{
     width: 100%;
     height: auto;
+    animation-name: single-post-thumbnail-fadein;
+    animation-duration: 3s;
+
+}
+
+@keyframes single-post-thumbnail-fadein {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+    
 }
 
 .has-thumbnail {

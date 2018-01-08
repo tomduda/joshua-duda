@@ -89,25 +89,21 @@ $(function() {
 		$(".testimonial-box-1").revealOnScroll("right", 2000);
 		$(".testimonial-box-2").revealOnScroll("left",3000);
 		$(".resume-border").revealOnScroll("left", 2000);
-
-		$(".site-content .widget-area").revealOnScroll("left", 5000);
-
+		$(".resume-border").revealOnScroll("left", 2000);
 
 	});
 	
 	
 });
+
+
  
+jQuery(document).ready(function($){
+	if ($(window).width() <= 600){
+		$(".main-navigation li a").click(function(){
+		$(".main-navigation li").hide();
+	});
+	}
+	
 
- jQuery(document).ready(function($){
- 	$(".main-navigation li a ").click(function(){
- 		if($(window).width() <= 600){
- 			$(".main-navigation li a").hide();
- 		}
-
- 		
- 	});
- }
- 	
-
- 	);
+});

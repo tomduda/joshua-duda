@@ -19,6 +19,15 @@ Layout: Sidebar right
     padding: 4rem;
     color: white;
     background: #235379;
+    animation-name: slide-in;
+    animation-duration: 5s;
+    
+}
+
+@keyframes slide-in {
+    0%   {opacity: 0}
+    
+    100% {opacity: 1}
     
 }
 
