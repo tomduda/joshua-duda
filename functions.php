@@ -125,13 +125,9 @@ function joshua_scripts_main() {
         $joshua_layout = get_option( 'layout_setting' );
 
         // Load parent theme stylesheet even when child theme is active
-        if ( is_child_theme() ) {
+        
                 wp_enqueue_style( 'joshua-parent-style', trailingslashit( get_template_directory_uri() ) . 'style.css' );
-        } else {
-                wp_enqueue_style( 'joshua-style', get_stylesheet_uri() );
-                
-        }
-
+        
         if (is_page_template('page-templates/page-nosidebar.php') || ! is_active_sidebar( 'sidebar-1' )) {
             wp_enqueue_style( 'joshua-layout' , get_template_directory_uri() . '/layouts/no-sidebar.css' );
         } elseif ( $joshua_layout == 'left-sidebar' ) {

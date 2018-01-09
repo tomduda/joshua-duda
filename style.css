@@ -1627,6 +1627,7 @@ div.article-content{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    padding-right: 2.5em;
  }
 
  .front-left,.front-right {    
@@ -1822,7 +1823,8 @@ div.article-content{
     top: -2.5em;
     left: -4.5em;
     background: rgba(0,0,0, 0.1);
-    padding: 2px;
+    padding: 2px 2em 2px 1em;
+    border-radius: 1em;
   
 }
 
