@@ -23,6 +23,7 @@
     ?>
     
 </section><!-- #services -->
+
 <!-- Portfolio overview Begin -->
 <div id="par-box1" ><h2 class="hide">About Me</h2></div>
 <div id="prlx_lyr_3"></div>
@@ -92,7 +93,7 @@
 </div><!-- .indent -->
 </section><!-- #testimonials -->
 
-            <!--Resume section-->
+<!--Resume section-->
 <div id="par-box3" ><h2 class="hide">Resume</h2></div>
 <div id="prlx_lyr_4"></div>
 <section id="resume">
@@ -133,7 +134,7 @@ wp_reset_postdata(); ?>
 wp_reset_postdata(); ?>
 </section><!-- #contact -->
 
-                <!-- Footer section begins -->
+<!-- Footer section begins -->
 <?php get_footer(); ?>
 
 
