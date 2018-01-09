@@ -444,6 +444,8 @@ a:active {
 
 /*Rounds corner of the last child in the main navigation menu*/
 
+
+
 .main-navigation ul li li:hover:last-child > a {border-radius: 0 0 25px 0;  }
 
 .main-navigation ul ul a:hover,
@@ -1761,7 +1763,7 @@ div.article-content{
     
     color: black;
     margin: 1em;
-    border-radius: 2em 0 2em 0;
+    border-radius: 2em 2em 0 0;
 
 }
 .about-tom-text-0, .about-tom-text-1, .about-tom-text-2{
@@ -2530,6 +2532,7 @@ nav.navigation.post-navigation{display:none}
 
 }
 
+
 .single-post-thumbnail{
     position: relative;
 }
@@ -2540,5 +2543,4 @@ nav.navigation.post-navigation{display:none}
     
 }
 
-
-
+/* width */
