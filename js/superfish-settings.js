@@ -1,6 +1,3 @@
-/* 
- * Custom Superfish settings
- */
 jQuery(document).ready(function($){
     var sf= $('ul.nav-menu');
     enquire.register("screen and (min-width:600px)", {
@@ -8,13 +5,10 @@ jQuery(document).ready(function($){
         // Triggered when a media query matches.
         match : function() {
             sf.superfish({
-                delay: 200,
-                speed: 'fast'
-            });
-        },      
-
-        // Triggered when the media query transitions 
-        // *from a matched state to an unmatched state*.
+            delay: 200,
+            speed: 'fast'
+        });
+    },      
         unmatch : function() {
             sf.superfish('destroy');
         }   

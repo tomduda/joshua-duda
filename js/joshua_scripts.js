@@ -74,7 +74,6 @@ $(window).scroll(function(){
 
 });
 	
-	
 });
 // fix for mobile menu not closing on click
 jQuery(document).ready(function($){
@@ -83,5 +82,4 @@ jQuery(document).ready(function($){
 		$(".main-navigation li").hide();
 	});
 }
-
 });

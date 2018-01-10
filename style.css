@@ -1181,7 +1181,7 @@ a.author-link {
 .wp-caption img[class*="wp-image-"] {
     display: block;
     margin: 0 auto;
-    padding: 1.5em;
+    /* padding: 1.5em; */
 }
 .wp-caption-text { text-align: center; }
 .wp-caption .wp-caption-text,

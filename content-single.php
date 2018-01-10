@@ -1,4 +1,4 @@
-<?php
+i<?php
 /**
  * Outputs the single post content. Displayed by single.php.
  * 

@@ -68,7 +68,6 @@ function joshua_widgets_init() {
 	));
 } // end joshua widgets init function
     add_action( 'widgets_init', 'joshua_widgets_init' );
-
 /* Enqueue scripts and styles. */
 function joshua_scripts_main() {
         // Get the current layout setting (sidebar left or right)
@@ -150,7 +149,7 @@ wp_enqueue_script('parallax_script' , get_stylesheet_directory_uri()  . '/js/par
 add_action('wp_enqueue_scripts', 'joshua_scripts');
 add_image_size('testimonial-mug', 253,253,true);
 // prevent testimonials, website portfolio and about tom from displaying in blog posts
-function exclude_testimonials( $query){
+function exclude_testimonials($query){
     if(!$query->is_catagory('testimonials') && $query->is_main_query()){
         $query->set('cat','-15');
     }

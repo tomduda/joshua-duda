@@ -1,9 +1,7 @@
-/* 
- * Toggles search on and off
- */
+/* Toggles search on and off */
 jQuery(document).ready(function($){
     $(".search-toggle").click(function(){
-        $(".search-box-wrapper").slideToggle('slow', function(){
+        $(".search-box-wrapper").slideToggle('fast', function(){
             $('.search-toggle').toggleClass('active');
         });
         return false;
