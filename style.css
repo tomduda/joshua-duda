@@ -933,11 +933,21 @@ blockquote cite {
     color: hsl(0, 0%, 0%);
 }
 .entry-meta {
+    display: flex;
     margin-bottom: 2rem;
-    padding: 0;
+    padding: .2em, .5em, .2em, .5em;
+    background: #1595A3;
     font-family: 'PT Serif', sans-serif;
     font-size: 14px;
     font-size: 1.4rem;
+}
+
+.entry-meta a{
+    color: white;
+}
+
+.entry-meta .edit-link{
+    padding: 1em;
 }
 .entry-meta a { font-weight: 600; }
 /* Hides 'on' and '.' in post meta on wide screens. */
@@ -947,8 +957,8 @@ blockquote cite {
 .single .byline,
 .single .posted-on,
 .single .comments-link {
-    display: block;
-    margin-bottom: 1em;
+    padding: 1em;
+    color: white;
 }
 .single .author { display: block; }    
 .single .mobile-hide {display: none;}
@@ -1013,7 +1023,7 @@ blockquote cite {
     font-weight: 900;
     font-size: 36px;
     font-size: 3.6rem;
-    color: black;
+    
 }
 .comments-area > ol {
     padding: 0;
