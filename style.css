@@ -935,7 +935,7 @@ blockquote cite {
 .entry-meta {
     display: flex;
     margin-bottom: 2rem;
-    padding: .2em, .5em, .2em, .5em;
+    padding: 1em;
     background: #1595A3;
     font-family: 'PT Serif', sans-serif;
     font-size: 14px;
@@ -943,7 +943,9 @@ blockquote cite {
 }
 
 .entry-meta a{
+    
     color: white;
+    padding: 1em;
 }
 
 .entry-meta .edit-link{
