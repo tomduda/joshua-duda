@@ -17,7 +17,7 @@ get_header(); ?>
 		
 
 		<main id="main" class="site-main" role="main">
-				<h1>This is page.php</h1>
+				
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>

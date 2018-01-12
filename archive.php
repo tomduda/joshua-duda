@@ -9,7 +9,6 @@
 get_header(); ?>
 <section id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<h1>This is archive.php</h1>
 		<?php if ( have_posts() ) : ?>
 			<header class="page-header">
 				<h1 class="page-title">

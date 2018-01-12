@@ -7,6 +7,8 @@
     background: white;
 }
 .site-content .widget-area {
+    margin-top: 14.8em;
+    z-index: 2;
     border: .5rem solid black;
     float: right;
     width: 380px;
@@ -103,6 +105,9 @@
     .comments-area,
     .paging-navigation,
     .author-index { margin-right: 0; }
+    .site-content .widget-area{
+        margin-top: 0;
+    }
 } /* End media querie */
 @media screen and (max-width: 1159px) {  
     .site-content .widget-area {

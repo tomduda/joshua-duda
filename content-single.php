@@ -1,14 +1,14 @@
-i<?php
+<?php
 /**
  * Outputs the single post content. Displayed by single.php.
  * 
  * @package joshua
  */
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    
+
     <?php 
+
     if (has_post_thumbnail()) {
         echo '<div class="single-post-thumbnail clear">';
         echo '<div class="image-shifter">';
@@ -19,7 +19,7 @@ i<?php
     ?>
     
 	<header class="entry-header clear">
-            
+
             <?php
                 /* translators: used between list items, there is a space after the comma */
                 $category_list = get_the_category_list( __( ', ', 'joshua' ) );
@@ -31,6 +31,7 @@ i<?php
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
+
                     <?php joshua_posted_on(); ?>
                     <?php 
                     if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { 
@@ -45,7 +46,7 @@ i<?php
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-        <h1>This is content-single.php</h1>
+
       <!--  <div class="about-author ">
             <div class="about-author-image">
                 <?php echo get_avatar(get_the_author_meta('ID'), 129);?>

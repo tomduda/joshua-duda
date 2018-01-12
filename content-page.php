@@ -22,7 +22,6 @@
 		
 
 	<div class="entry-content">
-		<h1>This is content-page.php</h1>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
